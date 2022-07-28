@@ -888,7 +888,8 @@
             callback: function() {
               var number = $('#guest').val();
               if (/^[789]\d{9}$/.test(number)) {
-                window.location.assign("https://wa.me/91" + number + "?text=Here+is+the+Digital+Business+Card+of+Govind+Bavkar%0Ahttps%3A%2F%2Fgovindbavkar.com%2F" );
+                window.open("https://wa.me/91" + number + "?text=Here+is+the+Digital+Business+Card+of+Govind+Bavkar%0Ahttps%3A%2F%2Fgovindbavkar.com%2F" , '_blank');
+                window.location.reload();
                 $('#guest').next().text(" ");
               } else {
                 $('#guest').next().text("Enter a proper number");
